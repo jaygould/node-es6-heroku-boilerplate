@@ -1,0 +1,36 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"engines": {
+		"node": "6.9.0"
+	},
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"server": "nodemon server.js --exec babel-node",
+		"heroku-postbuild": "npm install",
+		"start": "babel-node server.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "1.17.2",
+		"cors": "2.8.3",
+		"dotenv": "4.0.0",
+		"express": "4.15.3",
+		"http": "0.0.0",
+		"https": "1.0.0",
+		"lodash": "4.17.4",
+		"mongodb": "2.2.27",
+		"mongoose": "4.10.8",
+		"morgan": "1.8.2",
+		"path": "0.12.7"
+	},
+	"devDependencies": {
+		"babel": "6.23.0",
+		"babel-cli": "6.26.0",
+		"babel-preset-env": "1.6.0",
+		"nodemon": "1.11.0"
+	}
+}
